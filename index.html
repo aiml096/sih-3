@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishi Mitra - Agriculture Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f9f5;
+      color: #222;
+      text-align: center;
+    }
+    header {
+      background-color: #0A3D1E;
+      color: #fff;
+      padding: 1.5rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 2rem;
+    }
+    main p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌱 Krishi Mitra - Your Agriculture Assistant</h1>
+  </header>
+
+  <main>
+    <p>
+      Welcome to <strong>Krishi Mitra</strong>, your AI-powered agriculture voice assistant.  
+      Ask me about farming techniques, crop care, fertilizers, weather updates, or pest control.  
+      Just click the button below and start chatting!
+    </p>
+  </main>
+
+  <!-- Krishi Mitra Voice Assistant Widget -->
+  <vapi-widget
+    public-key="7e0cccea-4df7-4962-9438-1f2f5ab17e8c"
+    assistant-id="d0ab3720-f959-4677-8cb8-26f344e263f0"
+    mode="voice"
+    theme="dark"
+    base-bg-color="#0A3D1E"
+    accent-color="#14B85A"
+    cta-button-color="#1A5E2E"
+    cta-button-text-color="#ffffff"
+    border-radius="large"
+    size="full"
+    position="bottom-right"
+    title="🌱 Krishi Mitra"
+    start-button-text="Start Chat"
+    end-button-text="End Chat"
+    chat-first-message="👋 Namaskaram! I am Krishi Mitra, your agriculture assistant. How can I help you today?"
+    chat-placeholder="Type your farming question..."
+    voice-show-transcript="true"
+    consent-required="false"
+  ></vapi-widget>
+
+  <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+
+</body>
+</html>
