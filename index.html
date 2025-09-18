@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ml">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krishi Mitra - Agriculture Assistant</title>
+  <title>🌱 Krishi Mitra - കാർഷിക സഹായി</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Noto Sans Malayalam", Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f5f9f5;
       color: #222;
-      text-align: center;
+      line-height: 1.6;
     }
     header {
       background-color: #0A3D1E;
       color: #fff;
       padding: 1.5rem;
+      text-align: center;
     }
     header h1 {
       margin: 0;
@@ -24,29 +25,40 @@
     }
     main {
       padding: 2rem;
+      text-align: center;
     }
     main p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: auto;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0A3D1E;
+      color: #fff;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>🌱 Krishi Mitra - Your Agriculture Assistant</h1>
+    <h1>🌱 Krishi Mitra - കാർഷിക സഹായി</h1>
+    <p>നിങ്ങളുടെ കൃഷിയുമായി ബന്ധപ്പെട്ട ചോദ്യങ്ങൾക്ക് AI സഹായം</p>
   </header>
 
+  <!-- Main Content -->
   <main>
     <p>
-      Welcome to <strong>Krishi Mitra</strong>, your AI-powered agriculture voice assistant.  
-      Ask me about farming techniques, crop care, fertilizers, weather updates, or pest control.  
-      Just click the button below and start chatting!
+      സ്വാഗതം! ഞാൻ <strong>കൃഷി മിത്ര</strong>, കർഷകർക്ക് വേണ്ടിയുള്ള AI സഹായി.  
+      വിള പരിപാലനം, വളങ്ങൾ, രോഗനിയന്ത്രണം, കാലാവസ്ഥ പ്രവചനങ്ങൾ, സർക്കാർ പദ്ധതികൾ എന്നിവയെക്കുറിച്ച് ചോദിക്കൂ.  
+      ശബ്ദത്തിലോ എഴുത്തിലോ സംസാരിക്കാം.
     </p>
   </main>
 
-  <!-- Krishi Mitra Voice Assistant Widget -->
+  <!-- Krishi Mitra Widget -->
   <vapi-widget
     public-key="7e0cccea-4df7-4962-9438-1f2f5ab17e8c"
     assistant-id="d0ab3720-f959-4677-8cb8-26f344e263f0"
@@ -60,15 +72,20 @@
     size="full"
     position="bottom-right"
     title="🌱 Krishi Mitra"
-    start-button-text="Start Chat"
-    end-button-text="End Chat"
-    chat-first-message="👋 Namaskaram! I am Krishi Mitra, your agriculture assistant. How can I help you today?"
-    chat-placeholder="Type your farming question..."
+    start-button-text="ആരംഭിക്കുക"
+    end-button-text="അവസാനിപ്പിക്കുക"
+    chat-first-message="👋 നമസ്കാരം! ഞാൻ കൃഷി മിത്ര, നിങ്ങളുടെ കാർഷിക സഹായി. എന്താണ് അറിയേണ്ടത്?"
+    chat-placeholder="നിങ്ങളുടെ ചോദ്യം ഇവിടെ എഴുതൂ..."
     voice-show-transcript="true"
     consent-required="false"
   ></vapi-widget>
 
   <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Krishi Mitra | AI കാർഷിക സഹായി
+  </footer>
 
 </body>
 </html>
